@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NRI UNIVERSITY College of Engineering</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #092c4c;
+            color: white;
+            padding: 15px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav h2 {
+            color: #ffd166;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        /* Banner */
+        .banner {
+            min-height: 380px;
+            background:
+                linear-gradient(rgba(4, 30, 55, 0.75),
+                rgba(4, 30, 55, 0.75)),
+                url("https://nriit.edu.in/wp-content/uploads/2026/03/Untitled-design-Picsart-CropImage.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .banner h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffd166;
+            color: #092c4c;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* Common Sections */
+        section {
+            padding: 45px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #092c4c;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* Information Cards */
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card h3 {
+            color: #1261a0;
+            margin: 10px 0;
+        }
+
+        .icon {
+            font-size: 38px;
+        }
+
+        /* Alternate Section Background */
+        .light {
+            background: #e8f1fa;
+        }
+
+        /* Admissions */
+        .admission {
+            background: #092c4c;
+            color: white;
+            text-align: center;
+        }
+
+        .admission h2 {
+            color: #ffd166;
+        }
+
+        .admission p {
+            margin: 12px 0 22px;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background: #061c30;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            nav {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px 8px;
+            }
+
+            .banner {
+                padding: 75px 15px;
+            }
+
+            .banner h1 {
+                font-size: 30px;
+            }
+
+            .banner p {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h2>NRI UNIVERSITY College</h2>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#departments">Departments</a>
+            <a href="#faculty">Faculty</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#admissions">Admissions</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="banner" id="home">
+        <h1>Welcome to NRI UNIVERSITY College of Engineering</h1>
+        <p>Learn Today, Lead Tomorrow</p>
+        <a href="#admissions" class="btn">Apply for Admission</a>
+    </header>
+
+    <!-- About Us -->
+    <section id="about">
+        <h2 class="section-title">About Our College</h2>
+        <div class="about">
+            <p>
+                NRI UNIVERSITY College of Engineering is committed to providing
+                quality education, developing technical skills, and
+                preparing students for successful careers. We encourage
+                innovation, creativity, research, and leadership.
+            </p>
+        </div>
+    </section>
+
+    <!-- Departments and Courses -->
+    <section class="light" id="departments">
+        <h2 class="section-title">Departments & Courses</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Computer Science</h3>
+                <p>B.Tech CSE, AI & Machine Learning, Cybersecurity</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h3>Mechanical</h3>
+                <p>Engineering design, manufacturing and robotics.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏗️</div>
+                <h3>Civil Engineering</h3>
+                <p>Construction, structural design and infrastructure.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔌</div>
+                <h3>Electronics</h3>
+                <p>Electronics, communication and embedded systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Profiles -->
+    <section id="faculty">
+        <h2 class="section-title">Our Faculty</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">👩‍🏫</div>
+                <h3>Dr. Suneetha</h3>
+                <p>Professor – Computer Science</p>
+                <p>Specialization: Artificial Intelligence</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">👨‍🏫</div>
+                <h3>Dr. Pricsilla</h3>
+                <p>Professor – Electronics</p>
+                <p>Specialization: Communication Systems</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">👩‍💻</div>
+                <h3>Ms. Shanthi </h3>
+                <p>Assistant Professor – CSE</p>
+                <p>Specialization: Cybersecurity</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Facilities -->
+    <section class="light" id="facilities">
+        <h2 class="section-title">Campus Facilities</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Library</h3>
+                <p>Books, journals and digital learning resources.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🧪</div>
+                <h3>Laboratories</h3>
+                <p>Modern labs for practical learning and research.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏠</div>
+                <h3>Hostel</h3>
+                <p>Residential facilities for students.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏏</div>
+                <h3>Sports</h3>
+                <p>Sports grounds and indoor activity facilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions -->
+    <section class="admission" id="admissions">
+        <h2 class="section-title">Admissions Open</h2>
+        <p>
+            Start your engineering journey with us.
+            Check eligibility, prepare your documents,
+            and complete the application process.
+        </p>
+        <p><strong>Admission Procedure:</strong></p>
+        <p>
+            1. Check eligibility<br>
+            2. Fill out the application form<br>
+            3. Submit required documents<br>
+            4. Complete counselling and admission formalities
+        </p>
+        <a href="#contact" class="btn">Enquire Now</a>
+    </section>
+
+    <!-- Events -->
+    <section id="events">
+        <h2 class="section-title">College Events</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🎓</div>
+                <h3>Annual Day</h3>
+                <p>Celebrate student achievements and talents.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💡</div>
+                <h3>Technical Fest</h3>
+                <p>Projects, coding contests and innovation challenges.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎭</div>
+                <h3>Cultural Fest</h3>
+                <p>Music, dance, art and student performances.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact light" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p>📍 Address: Agiripalli, Andhra Pradesh, India</p>
+        <p>📞 Phone: +91 9390081421</p>
+        <p>✉️ Email: admissions@nriucollege.edu</p>
+        <p>🌐 Website: www.nriucollege.edu</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 NRI UNIVERSITY College of Engineering.
+        All Rights Reserved.</p>
+        <p>Designed using HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
