@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Foodie - Online Food Ordering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #fff5e6;
+            text-align: center;
+        }
+        header {
+            background: #ff5722;
+            color: white;
+            padding: 20px;
+        }
+        nav {
+            background: #333;
+            padding: 12px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+        h2 { color: #e64a19; }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            width: 220px;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+        .card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        button {
+            background: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover { background: green; }
+        .offer {
+            background: #ffe082;
+            padding: 15px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍕Andhra Spice</h1>
+    <p>Delicious Food Delivered to Your Door!</p>
+    <p>📍 Vijayawada | ⭐ 4.7/5 Rating</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#offers">Offers</a>
+    <a href="#reviews">Reviews</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Andhra Spice!</h2>
+    <p>Fresh, tasty and affordable food for everyone.</p>
+</section>
+
+<section id="offers" class="offer">
+    <h2>🎉 Special Offers</h2>
+    <p>Get 40% OFF on your first order!</p>
+    <p>Free delivery on orders above ₹599.</p>
+</section>
+
+<section id="menu">
+    <h2>Our Food Menu</h2>
+    <p>Categories: Pizza | Veg meals | Biryani | Dosa | Idly |</p>
+
+    <div class="menu">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400" alt="Cheese pizza">
+            <h3>Cheese Pizza</h3>
+            <p>Category: Pizza</p>
+            <p>Price: ₹199</p>
+            <button onclick="order('Cheese Pizza')">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcJqGkKTDJOEDqj9zlknq3Up_g6PdMs77m1MeTy9m8vw&s=10" alt="Veg meals">
+            <h3>Veg meals</h3>
+            <p>Category: Veg meals</p>
+            <p>Price: ₹159</p>
+            <button onclick="order('Veg meals')">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://t3.ftcdn.net/jpg/15/79/54/22/240_F_1579542255_BrGi5D40lm3njjFm7k8ZshLSUmKKcLLq.jpg" alt="Biryani">
+            <h3>Chicken Biryani</h3>
+            <p>Category: Biryani</p>
+            <p>Price: ₹349</p>
+            <button onclick="order('Chicken Biryani')">Order Now</button>
+        </div>
+<div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5zhSmsBbcV3wJfQXu6qb0t8iedgiQgzJU96HGNLvTBQ&s=10"alt="Dosa">
+            <h3>Dosa</h3>
+            <p>Category: Dosa</p>
+            <p>Price: ₹70</p>
+            <button onclick="order('Dosa')">Order Now</button>
+        </div>
+<div class="card">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/breakfast-2408818_960_720_20200107183621.jpg" alt="Idly">
+            <h3>Veg meals</h3>
+            <p>Category: Idly</p>
+            <p>Price: ₹65</p>
+            <button onclick="order('Idly')">Order Now</button>
+        </div>
+
+
+    </div>
+</section>
+
+<section id="reviews">
+    <h2>Customer Reviews</h2>
+    <p>⭐⭐⭐⭐⭐ "Amazing taste and fast delivery!" – vinay</p>
+    <p>⭐⭐⭐⭐ "Good food at a reasonable price!" – Priya</p>
+</section>
+
+<footer>
+    <p>Contact: 8897399938</p>
+    <p>© 2026 Andhra Spice Restaurant</p>
+</footer>
+
+<script>
+    function order(food) {
+        alert("You selected " + food + "!");
+    }
+</script>
+
+</body>
+</html>
