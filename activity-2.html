@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f2f2f2;
+        }
+        nav {
+            background: #FF91A40;
+            color: SALMON PINK;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+        .banner {
+            background: orange;
+            text-align: center;
+            padding: 20px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .card img {
+            width: 150px;
+            height: 130px;
+            object-fit: contain;
+        }
+        button {
+            background: #2874f0;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .price { color: green; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>SHOPPY </h2>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#categories">Categories</a>
+    <a href="#offers">Offers</a>
+    <a href="#cart">Cart</a>
+</nav>
+
+<div class="banner" id="offers">
+    <h1>MEGA SALE!</h1>
+    <p>Up to 50% OFF on selected products</p>
+</div>
+
+<h2 id="categories" align="center">Our Categories</h2>
+<p align="center">Electronics | Fashion | Shoes | Accessories</p>
+
+<h2 id="products" align="center">Popular Products</h2>
+
+<div class="products">
+
+    <div class="card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/2/PK/KC/KR/3720198/belear-b39-studio-over-ear-wireless-bluetooth-5-0-white-headphones.jpg"
+             alt="Headphones">
+        <h3>Headphones</h3>
+        <p>High-quality sound</p>
+        <p>⭐ 4.5/5</p>
+        <p class="price">₹999 <del>₹1499</del></p>
+        <p>33% OFF</p>
+        <button onclick="alert('Headphones added to cart!')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgX_LI7Bae-ZFzcWUWFHMUOCYx7pGWURWKfD56H0lLM2FbPW0c8OE4TBU&s=10"
+             alt="Shoes">
+        <h3>Sports Shoes</h3>
+        <p>Comfortable footwear</p>
+        <p>⭐ 4.8/5</p>
+        <p class="price">₹799 <del>₹1299</del></p>
+        <p>38% OFF</p>
+        <button onclick="alert('Shoes added to cart!')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="https://www.sonatawatches.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw7b993993/images/Sonata/Catalog/7152QM01_1.jpg?sw=600&sh=600"
+             alt="Watch">
+        <h3>Wrist Watch</h3>
+        <p>Stylish design</p>
+        <p>⭐ 4.4/5</p>
+        <p class="price">₹599 <del>₹999</del></p>
+        <p>40% OFF</p>
+        <button onclick="alert('Watch added to cart!')">
+            Add to Cart
+        </button>
+    </div>
+<div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFpTSH8m6JPrH4RXDVsfG7ro5rnmYeHOwjRoBPnstz9TP-s5pK_wPk-9Ht&s=10 alt="Kurti">
+        <h3>Kurti</h3>
+        <p>Stylish design</p>
+        <p>⭐ 4.8/5</p>
+        <p class="price">₹999 <del>₹999</del></p>
+        <p>40% OFF</p>
+        <button onclick="alert('Kurti added to cart!')">
+            Add to Cart
+        </button>
+
+</div>
+<div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD02ag3WejlZ97vwe5xZQGjCrPPWux2RPNpqWV6dP6XIwBP2eXjX77h-4&s=10" alt="Earings">
+        <h3>Earings</h3>
+        <p>Royal princess jumka</p>
+        <p>⭐ 4.5/5</p>
+        <p class="price">₹499 <del>₹499</del></p>
+        <p>40% OFF</p>
+        <button onclick="alert('Earings added to cart!')">
+            Add to cart
+              </button>
+<footer id="cart" style="background:#FFFFFF;color:white;
+text-align:center;padding:15px;">
+ <p>Thank you for shopping with SHOP EASY!</p>
+</footer>
+
+</body>
+</html>
